@@ -1,0 +1,16 @@
+ <nav class="nav">
+      <img src="https://static.vecteezy.com/system/resources/previews/005/584/153/non_2x/digital-technology-logo-template-mobile-phone-and-tablet-design-smart-gadgets-illustration-free-vector.jpg" alt="Logo" class="logo">
+      <span class="brand"><sup>Smart</sup>Gadget</span>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart"><i class="bi bi-cart"></i> Cart</a></li>
+        @if(Model.authenticated){
+            <li><a href="/logout">Logout</a></li>
+        }
+        else
+        {
+            <li><a href="/register">Register</a></li> 
+            <li><a href="/login">Login</a></li> 
+        }
+      </ul>
+</nav>
